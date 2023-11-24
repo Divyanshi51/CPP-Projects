@@ -9,7 +9,6 @@ string getPassword(int length)
     string Password = "";
     string Characters = "aquickbrownfoxjumpsoverthelazydogAQUICKBROWNFOXJUMPSOVERTHELAZYDOG0123456789";
     int charSize = Characters.size();
-    // cout << charSize;
     srand(time(0));
     int randomIndex;
     for (int i = 0; i < length; i++)
