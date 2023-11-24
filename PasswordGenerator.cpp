@@ -25,7 +25,7 @@ int main()
     int _length;
     cout << "Enter the Lenght of Password You Prefer:: ";
     cin >> _length;
-               string Password = getPassword(_length);
+    string Password = getPassword(_length);
     cout << "Generated Password :: " << Password << endl;
     return 0;
 }
