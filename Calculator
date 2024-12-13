@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+void Calculation(double a, double b, char c)
+{
+    switch (c)
+    {
+    case '+':
+        cout << a + b << endl;
+        break;
+    case '-':
+        cout << a - b << endl;
+        break;
+    case '*':
+        cout << a * b << endl;
+        break;
+    case '/':
+        cout << a / b << endl;
+        break;
+    default:
+        cout << "Invalid Operator" << endl;
+        break;
+    }
+}
+double input(double Num1, char character, double Num2)
+{
+    cout << "Write Num1, Operation and  Num2" << endl;
+    cin >> Num1 >> character >> Num2;
+    Calculation(Num1, Num2, character);
+    return 0;
+}
+int main()
+{
+    cout << "Hello There!" << endl;
+    bool status;
+    do
+    {
+        double a, b;
+        char c;
+        input(a, b, c);
+        status = !status;
+        cout << "\nYou want to perform any Calculations? write 0 or 1" << endl;
+        cin >> status;
+    } while (status);
+    cout << "Thank You" << endl;
+}
